@@ -1,0 +1,28 @@
+{
+  "name": "rawat-marriage-bureau",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Rawat Marriage Bureau — website + API on Supabase (Postgres), deployable to Vercel",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node dev.js",
+    "check": "node scripts/check-setup.js",
+    "demo": "node scripts/local-demo.js",
+    "migrate": "node scripts/migrate.js",
+    "test": "node tests/api.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "embedded-postgres": "^18.7.0-beta.19",
+    "exceljs": "^4.4.0"
+  },
+  "type": "commonjs",
+  "main": "index.js"
+}
