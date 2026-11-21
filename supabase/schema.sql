@@ -15,7 +15,7 @@ create table if not exists public.users (
   active               boolean not null default true,
   password_hash        text not null,
   salt                 text not null,
-  must_change_password boolean not null default false,
+  must_change_password boolean not null default false,   
   created_by           text,
   created_at           timestamptz not null default now(),
   last_login           timestamptz
